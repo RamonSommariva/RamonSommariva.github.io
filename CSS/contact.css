@@ -1,0 +1,91 @@
+.footer {
+  background: #00102F;
+  color: white;
+  font-family: verdana;
+  padding: 5px 0px;
+  gap: 10px;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 245px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 2;
+  font-weight: 400;
+  position: relative;
+  align-items: center;
+}
+
+.ciao {
+  position: relative;
+}
+
+.ciao::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 56px;
+  background: url("../arquivo/img/Vector.svg") no-repeat center center;
+  left: -30px;
+  top: -18px;
+}
+
+.email {
+  position: relative;
+}
+
+.email::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  background: url("../arquivo/img/email.svg") no-repeat center center;
+  left: -35px;
+  top: 10px;
+}
+
+.phone {
+  position: relative;
+}
+
+.phone::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("../arquivo/img/icon whats.svg") no-repeat center center;
+  left: -35px;
+  top: 7px;
+}
+
+.footer-contact {
+  list-style: none;
+}
+
+@media (max-width: 800px) {
+  .footer-content {
+    gap: 90px;
+  }
+}
+
+@media (max-width: 680px) {
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 10px;
+  }
+  .contact {
+    margin: 0px;
+  }
+}
+
+

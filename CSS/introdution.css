@@ -1,0 +1,69 @@
+.introdution {
+  max-width: 900px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 50px;
+}
+.introdution img {
+  border-radius: 200px;
+  max-width: 75%;
+  min-width: 100px;
+}
+
+.introdution h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  position: relative;
+}
+
+.introdution h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../arquivo/img/ornamento.svg") no-repeat center;
+  position: absolute;
+  top: -30px;
+  left: -50px;
+  z-index: -1;
+}
+
+@media (max-width: 800px) {
+  .introdution h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .introdution img {
+    min-width: 80px;
+  }
+
+  .introdution h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .introdution img {
+    min-width: 70px;
+  }
+  .introdution h1 {
+    font-size: 2rem;
+  }
+  .introdution h1::before {
+    width: 40px;
+    height: 10px;
+    top: 0px;
+    left: 0px;
+  }
+  .introdution {
+    gap: 0px;
+    margin: 0;
+  }
+}
